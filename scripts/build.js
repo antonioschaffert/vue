@@ -8,7 +8,7 @@ if (!fs.existsSync('dist')) {
   fs.mkdirSync('dist')
 }
 
-let builds = require('./config').getAllBuilds()
+let builds = require('./my_config').getAllBuilds()
 
 // filter builds via command line arg
 if (process.argv[2]) {
